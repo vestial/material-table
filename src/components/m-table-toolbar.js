@@ -63,6 +63,7 @@ export class MTableToolbar extends React.Component {
         <TextField
           className={this.props.searchFieldAlignment === 'left' && this.props.showTitle === false ? null : this.props.classes.searchField}
           value={this.props.searchText}
+          variant="outlined"
           onChange={event => this.props.onSearchChanged(event.target.value)}
           placeholder={localization.searchPlaceholder}          
           InputProps={{
